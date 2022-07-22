@@ -1,2 +1,2 @@
 # node-express-rest-api
-Learning
+Learning to make an API using express and node.js
