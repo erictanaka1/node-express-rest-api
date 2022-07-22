@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/erictanaka1/node-express-rest-api/issues"
   },
-  "homepage": "https://github.com/erictanaka1/node-express-rest-api#readme"
+  "homepage": "https://github.com/erictanaka1/node-express-rest-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
