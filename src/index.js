@@ -3,8 +3,14 @@ const express = require('express');
 const v1produtsRouter = require('./v1/routes/productRoutes');
 
 const app = express();
+
+// Server port
 const port = process.env.PORT || 3000;
 
+// Use json parsing
+app.use(express.json());
+
+// Products Router
 app.use('/api/v1/products', v1produtsRouter);
 
 app.listen(port, () => {
