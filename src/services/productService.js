@@ -6,8 +6,10 @@ const getAllProducts = () => {
     return Product.getAllProducts();
 };
 
-const getProductById = () => {
-    return;
+const getProductById = (productId) => {
+    const product = Product.getProductById(productId);
+
+    return product;
 };
 
 const createNewProduct = (newProduct) => {
@@ -23,12 +25,21 @@ const createNewProduct = (newProduct) => {
     return createdProduct;
 };
 
-const updateProductById = () => {
-    return;
+const updateProductById = (productId, productNewData) => {
+    const productToUpdate = {
+        id: productId,
+        ...productNewData,
+    }
+    
+    const updatedProduct = Product.updateProductById(productToUpdate);
+    
+    return updatedProduct;
 };
 
-const deleteProductById = () => {
-    return;
+const deleteProductById = (productId) => {
+    const deletedProduct = Product.deleteProductById(productId);
+
+    return deletedProduct;
 }
 
 module.exports = {

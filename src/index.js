@@ -1,6 +1,6 @@
 // Currently in file src/index.js
 const express = require('express');
-const v1produtsRouter = require('./v1/routes/productRoutes');
+const v1productsRouter = require('./v1/routes/productRoutes');
 
 const app = express();
 
@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Products Router
-app.use('/api/v1/products', v1produtsRouter);
+app.use('/api/v1/products', v1productsRouter);
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
